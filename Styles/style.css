@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:azure;
+}
+.container{
+    background-color: white;
+    padding: 30px 65px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    row-gap: 20px;
+}
+.container header{
+    height: 65px;
+    width: 65px;
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+    font-size: 40px;
+}
+
+.container h3{
+    font-size: 30px;
+    font-weight: 900px;
+}
+
+:where(.container,form,.input-field,header){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-field {
+ flex-direction: row;
+ column-gap: 10px;
+
+}
+
+.input-field input{
+    height: 50px;
+    width: 45px;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button{
+    display: none;
+}
+button{
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    pointer-events: none;
+    background-color: rgb(102, 102, 121);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: blue;
+}
+button.active{
+    background-color: rgb(55, 13, 240);
+    pointer-events: auto;
+}
